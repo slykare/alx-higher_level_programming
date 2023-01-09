@@ -1,16 +1,20 @@
 #!/usr/bin/python3
-"""
-A class MyList that inherits from list
-"""
+'''
+1-my_list.py
+class MyList that inherits from list.
+'''
 
 
 class MyList(list):
-    """Derived class of super class list"""
-    def __init__(self):
-        """initializes the object's attributes"""
-        super().__init__()
-        """Calls the initialization method of the super class list"""
+    '''
+    class MyList that inherits from list
+    '''
 
     def print_sorted(self):
-        """prints the sorted list (ascending sort)"""
-        print(sorted(self))
+        '''
+        prints the list, but sorted (ascending sort)
+        '''
+
+        newlist = self[:]
+        newlist.sort()
+        print("{}".format(newlist))
