@@ -1,24 +1,27 @@
 #!/usr/bin/python3
-''' 
-Module that defines the class Student
-'''
+"""A class Student that defines a student"""
 
 
 class Student:
-    '''
-    Class to create student instances
-    '''
-
+    """Module of a student
+    Attributes:
+        first_name (str): Describes the 1st name of a student
+        last_name (str): Describes the last name of a student
+        age (int): Describes the age of a student
+    """
     def __init__(self, first_name, last_name, age):
-        '''
-        Special method to initialize
-        '''
+        """Initializes the student attributes
+        Args:
+            first_name (str): Describes the 1st name of a student
+            last_name (str): Describes the last name of a student
+            age (int): Describes the age of a student
+        Returns:
+            None
+        """
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
 
     def to_json(self):
-        '''
-        Method that returns directory description
-        '''
-        return self.__dict__.copy()
+        """retrieves a dictionary representation of a Student instance"""
+        return(self.__dict__)
